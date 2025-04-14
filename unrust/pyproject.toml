@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "unrust"
+version = "0.1.0"
+dependencies = [
+  "beautifulsoup4",
+  "click",
+  "pyghidra",
+  "requests",
+  "toml",
+]
+requires-python = ">= 3.12.10"
+
+[project.scripts]
+unrust = "unrust.cli:cli"
